@@ -29,7 +29,7 @@ import Twitter from './Twitter';
 import TwitterInverse from './TwitterInverse';
 import User from './User';
 import Youtube from './Youtube';
-import Logo from './logo';
+//import Logo from './logo';
 
 function Icon(props) {
   switch (props.symbol) {
@@ -69,8 +69,10 @@ function Icon(props) {
       return <List />;
     case 'logout':
       return <Logout />;
+    /*
     case 'logo':
       return <Logo />;
+    */
     case 'minus':
       return <Minus />;
     case 'phone':
