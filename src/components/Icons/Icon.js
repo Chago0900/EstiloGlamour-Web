@@ -69,6 +69,8 @@ function Icon(props) {
       return <List />;
     case 'logout':
       return <Logout />;
+    case 'logo':
+      return <Logo />;
     case 'minus':
       return <Minus />;
     case 'phone':
@@ -89,8 +91,6 @@ function Icon(props) {
       return <User />;
     case 'youtube':
       return <Youtube />;
-    case 'logo':
-      return <Logo />;
     default:
       return <span>Unknown icon: {props.symbol}</span>;
   }
