@@ -117,6 +117,7 @@ const Header = (prop) => {
           >
             <Icon symbol={`${mobileMenu === true ? 'cross' : 'burger'}`}></Icon>
           </div>
+          
           <Brand />
           <div className={styles.actionContainers}>
             <button

@@ -29,11 +29,17 @@ const IndexPage = () => {
       {/* Hero Container */}
       <Hero
         maxWidth={'500px'}
-        image={'/banner1.png'}
-        title={'Essentials for a cold winter'}
-        subtitle={'Discover Autumn Winter 2021'}
+        image={'/bannerDior.png'}
+        title={' '}
+        subtitle={' '}
         ctaText={'shop now'}
         ctaAction={goToShop}
+        ctaButton= {{
+          position: 'absolute',
+          bottom: '20px', // Adjust this value to your desired vertical position
+          right: '20px',  // Adjust this value to your desired horizontal position
+          
+        }}
       />
 
       {/* Message Container */}
@@ -110,20 +116,6 @@ const IndexPage = () => {
           <Title name={'Journal'} subtitle={'Notes on life and style'} />
           <BlogPreviewGrid data={blogData} />
         </Container>
-      </div>
-
-      {/* Promotion */}
-      <div className={styles.sustainableContainer}>
-        <Hero
-          image={'/banner3.png'}
-          title={'We are Sustainable'}
-          subtitle={
-            'From caring for our land to supporting our people, discover the steps we’re taking to do more for the world around us.'
-          }
-          ctaText={'read more'}
-          maxWidth={'660px'}
-          ctaStyle={styles.ctaCustomButton}
-        />
       </div>
 
       {/* Social Media */}

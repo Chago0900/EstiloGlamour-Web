@@ -52,7 +52,7 @@ const SamplePage = (props) => {
                   <img src={'/cloth.png'} alt={'sample1'} />
                 </div>
                 <div className={styles.imageContainer}>
-                  <img src={'/collections/collection1.png'} alt={'sample2'} />
+                  <img src={'/collections/women_collection.png'} alt={'sample2'} />
                 </div>
               </div>
               <div className={styles.content}>
