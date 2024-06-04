@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-ecommerce-theme",
+  "name": "Perfumeria&Glamour",
   "version": "1.0.0",
   "private": true,
   "description": "An e-commerce theme designed by Matter Design for Netlify.",
@@ -18,7 +18,6 @@
   },
   "dependencies": {
     "@netlify/plugin-gatsby": "^3.8.0",
-    "cypress": "^10.0.3",
     "gatsby": "^4.5.4",
     "gatsby-plugin-manifest": "^4.14.0",
     "react": "^18.0.0",
@@ -29,7 +28,6 @@
   "devDependencies": {
     "file-loader": "^6.2.0",
     "gatsby-plugin-netlify": "^5.0.0",
-    "netlify-plugin-cypress": "~2.2.0",
     "plop": "^3.0.5",
     "prettier": "^2.6.2"
   }

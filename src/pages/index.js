@@ -8,7 +8,7 @@ import Highlight from '../components/Highlight';
 import Layout from '../components/Layout/Layout';
 import ProductCollectionGrid from '../components/ProductCollectionGrid';
 import ProductCardGrid from '../components/ProductCardGrid';
-import Quote from '../components/Quote';
+//import Quote from '../components/Quote';
 import Title from '../components/Title';
 
 import { generateMockBlogData, generateMockProductData } from '../helpers/mock';
@@ -65,7 +65,7 @@ const IndexPage = () => {
       {/* New Arrivals */}
       <div className={styles.newArrivalsContainer}>
         <Container>
-          <Title name={'New Arrivals'} link={'/shop'} textLink={'view all'} />
+          <Title name={'Nuevas Fragancias'} link={'/shop'} textLink={'view all'} />
           <ProductCardGrid
             spacing={true}
             showSlider
@@ -92,7 +92,8 @@ const IndexPage = () => {
         </Container>
       </div>
 
-      {/* Promotion */}
+        {/*
+      {/* Promotion 
       <div className={styles.promotionContainer}>
         <Hero image={'/banner2.png'} title={`-50% off \n All Essentials`} />
         <div className={styles.linkContainers}>
@@ -100,8 +101,9 @@ const IndexPage = () => {
           <Link to={'/shop'}>MAN</Link>
         </div>
       </div>
+        */}
 
-      {/* Quote */}
+      {/* Quote 
       <Quote
         bgColor={'var(--standard-light-grey)'}
         title={'about Sydney'}
@@ -109,11 +111,12 @@ const IndexPage = () => {
           '“We believe in two things: the pursuit of quality in everything we do, and looking after one another. Everything else should take care of itself.”'
         }
       />
+      */}
 
       {/* Blog Grid */}
       <div className={styles.blogsContainer}>
         <Container size={'large'}>
-          <Title name={'Journal'} subtitle={'Notes on life and style'} />
+          <Title name={'Colecciones'} subtitle={'Las mejores fragancias'} />
           <BlogPreviewGrid data={blogData} />
         </Container>
       </div>
