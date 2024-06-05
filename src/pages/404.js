@@ -6,6 +6,7 @@ import Button from '../components/Button';
 import Container from '../components/Container';
 import FormInputField from '../components/FormInputField/FormInputField';
 import Layout from '../components/Layout';
+import ApiExample from '../components/ApiExample';
 
 const NotFoundPage = () => {
   const [search, setSearch] = useState('');
@@ -34,10 +35,11 @@ const NotFoundPage = () => {
                 type={'text'}
               />
               <Button type={'submit'} level={'primary'}>
-                search
+                Search
               </Button>
             </div>
           </form>
+          <ApiExample /> {/* Including the ApiExample component */}
         </div>
       </Container>
     </Layout>
