@@ -8,10 +8,10 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.OpenApi.Models;
-using XF1Api.Repositories;
-using XF1Api.Data;
+using EstiloGlamourApi.Repositories;
+using EstiloGlamourApi.Data;
 
-namespace XF1Api
+namespace EstiloGlamourApi
 {
     public class Startup
     {
@@ -25,15 +25,11 @@ namespace XF1Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {               
-            services.AddDbContext<XFIAOnlinedatabaseContext>(options => options.UseSqlServer(Configuration.GetConnectionString("XFIAOnlinedatabaseConnection")));
+            services.AddDbContext<EstiloGlamourOnlinedatabaseContext>(options => options.UseSqlServer(Configuration.GetConnectionString("EstiloGlamourOnlinedatabaseConnection")));
 
-            services.AddScoped<IXFIAOnlinedatabaseContext>(provider => provider.GetService<XFIAOnlinedatabaseContext>());
-            services.AddScoped<IEscuderiaRepository, EscuderiaRepository>();
+            services.AddScoped<IEstiloGlamourOnlinedatabaseContext>(provider => provider.GetService<EstiloGlamourOnlinedatabaseContext>());
+            services.AddScoped<IProductoRepository, ProductoRepository>();
             services.AddScoped<ICampeonatoRepository, CampeonatoRepository>();
-            services.AddScoped<IJugadorRepository, JugadorRepository>();
-            services.AddScoped<ICarreraRepository, CarreraRepository>();
-            services.AddScoped<IEquipoRepository, EquipoRepository>();
-            services.AddScoped<IPilotoRepository, PilotoRepository>();
 
             services.AddControllers();
 

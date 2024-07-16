@@ -12,15 +12,16 @@
     { "value": "mandarin", "label": "普通话" }
   ],
   "social": {
+    "whatsapp": "https://twitter.com/hellomatter",
     "facebook": "https://www.facebook.com/MatterDesign/",
     "instagram": "https://www.instagram.com/p/CVwMlChIWmW",
     "twitter": "https://twitter.com/hellomatter",
     "youtube": "https://www.youtube.com/channel/UCEOu94Haa--QmltsSawflXg"
   },
   "paymentOptions": {
-    "visa": true,
-    "mastercard": true,
-    "amex": true
+    "visa": false,
+    "mastercard": false,
+    "amex": false
   },
   "footerLinks": [
     {
@@ -64,64 +65,44 @@
   ],
   "headerLinks": [
     {
-      "menuLabel": "Shop",
+      "menuLabel": "Tienda",
       "menuLink": "/shop",
       "category": [
         {
-          "categoryLabel": "woman",
+          "categoryLabel": "Mujer",
           "submenu": [
             {
-              "menuLabel": "All clothing",
+              "menuLabel": "Perfumes",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "sweatshirts & hoodies",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "jackets",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "trousers",
+              "menuLabel": "Estuches",
               "menuLink": "/shop"
             }
           ]
         },
         {
-          "categoryLabel": "men",
+          "categoryLabel": "Hombre",
           "submenu": [
             {
-              "menuLabel": "All clothing",
+              "menuLabel": "Perfumes",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "sweatshirts & hoodies",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "jackets",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "trousers",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "pants",
+              "menuLabel": "Estuches",
               "menuLink": "/shop"
             }
           ]
         },
         {
-          "categoryLabel": "accessories",
+          "categoryLabel": "Infantil",
           "submenu": [
             {
-              "menuLabel": "caps & scarves",
+              "menuLabel": "Perfumes",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "bags",
+              "menuLabel": "Estuches",
               "menuLink": "/shop"
             }
           ]
@@ -129,12 +110,7 @@
       ]
     },
     {
-      "menuLabel": "journal",
-      "menuLink": "/blog",
-      "category": null
-    },
-    {
-      "menuLabel": "About",
+      "menuLabel": "Más información",
       "menuLink": "/about",
       "category": null
     }

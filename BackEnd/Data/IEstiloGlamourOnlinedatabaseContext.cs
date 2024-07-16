@@ -1,21 +1,16 @@
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using XF1Api.Models;
+using EstiloGlamourApi.Models;
 
 // Represents a session with the database and can be used to query and save instances of your entities.
 
-namespace XF1Api.Data
+namespace EstiloGlamourApi.Data
 {
-    public interface IXFIAOnlinedatabaseContext
+    public interface IEstiloGlamourOnlinedatabaseContext
     {
         DbSet<Campeonato> CAMPEONATO { get; init; }
-        DbSet<Carrera> CARRERA { get; init; }
-        DbSet<Equipo> EQUIPO { get; init; }
-
-        DbSet<Escuderia> ESCUDERIA { get; init; }
-        DbSet<Jugador> JUGADOR { get; init; }
-        DbSet<Piloto> PILOTO { get; init; }
+        DbSet<Producto> PRODUCTO { get; init; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     }
 }

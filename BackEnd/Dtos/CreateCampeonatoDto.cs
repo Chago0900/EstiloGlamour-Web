@@ -1,6 +1,6 @@
 using System;
 
-namespace XF1Api.Dtos
+namespace EstiloGlamourApi.Dtos
 {
     public class CreateCampeonatoDto
     {

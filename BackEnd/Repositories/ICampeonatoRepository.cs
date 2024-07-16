@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using XF1Api.Models;
+using EstiloGlamourApi.Models;
 using Microsoft.Extensions.Configuration;
 
-namespace XF1Api
+namespace EstiloGlamourApi
 {
     public interface ICampeonatoRepository
     {

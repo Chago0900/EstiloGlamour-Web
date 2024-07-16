@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 
 import Accordion from '../Accordion';
 import Container from '../Container';
-import Dropdown from '../Dropdown/Dropdown';
+//import Dropdown from '../Dropdown/Dropdown';
 import FormInputField from '../FormInputField/FormInputField';
 import Icon from '../Icons/Icon';
-import Button from '../Button';
+//import Button from '../Button';
 import Config from '../../config.json';
 import * as styles from './Footer.module.css';
 
@@ -67,13 +67,14 @@ const Footer = (prop) => {
                 </div>
               );
             })}
+            
             <div className={styles.newsLetter}>
               <div className={styles.newsLetterContent}>
-                <span className={styles.linkTitle}>Newsletter</span>
+                <span className={styles.linkTitle}>Contáctenos</span>
                 <p className={styles.promoMessage}>
-                  Get 15% off your first purchase! Plus, be the first to know
-                  about sales, new product launches and exclusive offers!
+                  Te puedes comunicar con nosotros por redes!
                 </p>
+                {/*}
                 <form
                   className={styles.newsLetterForm}
                   onSubmit={(e) => subscribeHandler(e)}
@@ -86,17 +87,18 @@ const Footer = (prop) => {
                     handleChange={(_, e) => setEmail(e)}
                   />
                 </form>
+                */}
                 <div className={styles.socialContainer}>
-                  {Config.social.youtube && (
+                  
+                  {Config.social.whatsapp && (
                     <div
-                      onClick={() => handleSocialClick('youtube')}
+                      onClick={() => handleSocialClick('whatsapp')}
                       role={'presentation'}
                       className={styles.socialIconContainer}
                     >
-                      <Icon symbol={'youtube'}></Icon>
+                      <Icon symbol={'whatsapp'}></Icon>
                     </div>
                   )}
-
                   {Config.social.instagram && (
                     <div
                       onClick={() => handleSocialClick('instagram')}
@@ -106,32 +108,14 @@ const Footer = (prop) => {
                       <Icon symbol={'instagram'}></Icon>
                     </div>
                   )}
-
-                  {Config.social.facebook && (
-                    <div
-                      onClick={() => handleSocialClick('facebook')}
-                      role={'presentation'}
-                      className={styles.socialIconContainer}
-                    >
-                      <Icon symbol={'facebook'}></Icon>
-                    </div>
-                  )}
-
-                  {Config.social.twitter && (
-                    <div
-                      onClick={() => handleSocialClick('twitter')}
-                      role={'presentation'}
-                      className={styles.socialIconContainer}
-                    >
-                      <Icon symbol={'twitter'}></Icon>
-                    </div>
-                  )}
+                
                 </div>
               </div>
             </div>
           </div>
         </div>
       </Container>
+      {/*
       <div className={styles.contentBottomContainer}>
         <Container size={'large'} spacing={'min'}>
           <div className={styles.contentBottom}>
@@ -180,6 +164,7 @@ const Footer = (prop) => {
           </div>
         </Container>
       </div>
+      */}
     </div>
   );
 };

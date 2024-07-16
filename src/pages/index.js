@@ -7,17 +7,17 @@ import BlogPreviewGrid from '../components/BlogPreviewGrid';
 import Highlight from '../components/Highlight';
 import Layout from '../components/Layout/Layout';
 import ProductCollectionGrid from '../components/ProductCollectionGrid';
-import ProductCardGrid from '../components/ProductCardGrid';
+//import ProductCardGrid from '../components/ProductCardGrid';
 //import Quote from '../components/Quote';
 import Title from '../components/Title';
 
-import { generateMockBlogData, generateMockProductData } from '../helpers/mock';
+import { generateMockBlogData } from '../helpers/mock';
 
 import * as styles from './index.module.css';
-import { Link, navigate } from 'gatsby';
+import { navigate } from 'gatsby';
 
 const IndexPage = () => {
-  const newArrivals = generateMockProductData(3, 'shirt');
+  //const newArrivals = generateMockProductData(3, 'shirt');
   const blogData = generateMockBlogData(3);
 
   const goToShop = () => {
@@ -42,30 +42,31 @@ const IndexPage = () => {
         }}
       />
 
+
       {/* Message Container */}
       <div className={styles.messageContainer}>
         <p>
-          This is a demonstration of the Sydney theme for verse by{' '}
-          <span className={styles.gold}>matter design.</span>
+
         </p>
         <p>
-          wear by <span className={styles.gold}>sunspel</span> and{' '}
+          {/*wear by <span className={styles.gold}>sunspel</span> and{' '}
           <span className={styles.gold}>scotch&soda</span>
+          */}
         </p>
       </div>
 
       {/* Collection Container */}
       <div className={styles.collectionContainer}>
         <Container size={'large'}>
-          <Title name={'New Collection'} />
+          <Title name={'Las Mejores Fragancias'} />
           <ProductCollectionGrid />
         </Container>
       </div>
 
-      {/* New Arrivals */}
+      {/* New Arrivals 
       <div className={styles.newArrivalsContainer}>
         <Container>
-          <Title name={'Nuevas Fragancias'} link={'/shop'} textLink={'view all'} />
+          <Title name={'Encuentre sus perfumes favoritos'} link={'/shop'} textLink={'view all'} />
           <ProductCardGrid
             spacing={true}
             showSlider
@@ -76,6 +77,18 @@ const IndexPage = () => {
         </Container>
       </div>
 
+      */}
+
+      {/* Message Container */}
+      <div className={styles.messageContainer}>
+        <p>
+
+        </p>
+        <p>
+          
+        </p>
+      </div>
+
       {/* Highlight  */}
       <div className={styles.highlightContainer}>
         <Container size={'large'} fullMobile>
@@ -84,8 +97,8 @@ const IndexPage = () => {
             altImage={'highlight image'}
             miniImage={'/highlightmin.png'}
             miniImageAlt={'mini highlight image'}
-            title={'Luxury Knitwear'}
-            description={`This soft lambswool jumper is knitted in Scotland, using yarn from one of the world's oldest spinners based in Fife`}
+            title={'Su Perfumería por Excelencia'}
+            description={`Descubre nuestra selección de perfumes de primera calidad.`}
             textLink={'shop now'}
             link={'/shop'}
           />
@@ -121,7 +134,8 @@ const IndexPage = () => {
         </Container>
       </div>
 
-      {/* Social Media */}
+
+      {/* Social Media 
       <div className={styles.socialContainer}>
         <Title
           name={'Styled by You'}
@@ -133,7 +147,7 @@ const IndexPage = () => {
           <img src={`/social/socialMedia3.png`} alt={'social media 3'} />
           <img src={`/social/socialMedia4.png`} alt={'social media 4'} />
         </div>
-      </div>
+      </div>*/}
       <AttributeGrid />
     </Layout>
   );

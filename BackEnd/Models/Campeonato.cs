@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace XF1Api.Models
+namespace EstiloGlamourApi.Models
 {
     public class Campeonato
     {

@@ -29,6 +29,7 @@ import Twitter from './Twitter';
 import TwitterInverse from './TwitterInverse';
 import User from './User';
 import Youtube from './Youtube';
+import WhatsApp from './WhatsApp';
 //import Logo from './logo';
 
 function Icon(props) {
@@ -93,6 +94,8 @@ function Icon(props) {
       return <User />;
     case 'youtube':
       return <Youtube />;
+    case 'whatsapp':
+      return <WhatsApp />;
     default:
       return <span>Unknown icon: {props.symbol}</span>;
   }

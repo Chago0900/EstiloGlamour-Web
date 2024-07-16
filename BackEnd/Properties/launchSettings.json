@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "XF1Api": {
+    "EstiloGlamourApi": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

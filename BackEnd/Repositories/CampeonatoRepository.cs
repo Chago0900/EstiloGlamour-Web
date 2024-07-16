@@ -2,16 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using XF1Api.Models;
-using XF1Api.Data;
+using EstiloGlamourApi.Models;
+using EstiloGlamourApi.Data;
 
 
-namespace XF1Api.Repositories
+namespace EstiloGlamourApi.Repositories
 {
     public class CampeonatoRepository : ICampeonatoRepository
     {
-        private readonly IXFIAOnlinedatabaseContext _context;
-        public CampeonatoRepository(IXFIAOnlinedatabaseContext context)
+        private readonly IEstiloGlamourOnlinedatabaseContext _context;
+        public CampeonatoRepository(IEstiloGlamourOnlinedatabaseContext context)
         {
             _context = context;
     

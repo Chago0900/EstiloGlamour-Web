@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("XF1Api")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("EstiloGlamourApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("XF1Api")]
-[assembly: System.Reflection.AssemblyTitleAttribute("XF1Api")]
+[assembly: System.Reflection.AssemblyProductAttribute("EstiloGlamourApi")]
+[assembly: System.Reflection.AssemblyTitleAttribute("EstiloGlamourApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.

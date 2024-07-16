@@ -4,14 +4,14 @@ using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using XF1Api.Dtos;
-using XF1Api.Models;
-using XF1Api.Repositories;
-using XF1Api.Data;
+using EstiloGlamourApi.Dtos;
+using EstiloGlamourApi.Models;
+using EstiloGlamourApi.Repositories;
+using EstiloGlamourApi.Data;
 using System.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 
-namespace XF1Api.Controllers
+namespace EstiloGlamourApi.Controllers
 {
     [ApiController]
     [Route("api/Campeonato")]
